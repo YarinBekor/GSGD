@@ -3,16 +3,16 @@
 <head>
     <meta charset="utf-8">
 
-    <meta property="og:title" content="SinMDM: Single Motion Diffusion"/>
-    <meta property="og:url" content="https://sin-mdm.github.io/sin-mdm-page/"/>
+    <meta property="og:title" content="Gaussian See, Gaussian Do: 3D Semantic Motion Transfer"/>
+    <meta property="og:url" content="https://yarinbekor.github.io/GSGD/"/>
     <meta property="og:image:width" content="1200"/>
     <meta property="og:image:height" content="630"/>
 
 
-    <title>Single Motion Diffusion</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ3PYPGJRH"></script>
-    <script>
+    <title>Gaussian See, Gaussian Do</title>
+    <!-- Google Analytics temporarily disabled -->
+    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ3PYPGJRH"></script> -->
+    <!-- <script>
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -22,11 +22,11 @@
         gtag('js', new Date());
 
         gtag('config', 'G-PQ3PYPGJRH');
-    </script>
+    </script> -->
 
     <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
           rel="stylesheet">
-    <link rel="icon" href="static/figures/img_2.png">
+    <link rel="icon" href="static/figures/dumbo_7.png" sizes="128x128">
 
     <link rel="stylesheet" href="static/css/bulma.min.css">
     <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
@@ -52,7 +52,7 @@
         <div class="container is-max-widescreen">
             <!-- <div class="columns is-centered"> -->
             <div class="column has-text-centered">
-                <h1 class="title is-1 publication-title">SinMDM: Single Motion Diffusion</h1>
+                <h1 class="title is-1 publication-title">Gaussian See, Gaussian Do:<br>3D Semantic Motion Transfer</h1>
             </div>
         </div>
     </div>
@@ -71,35 +71,39 @@
                     2. change link to video.
                     3. remove bibtex reference.
 -->
-        <div class="column has-text-centered">
+        <!-- <div class="column has-text-centered">
               <div class="is-size-4 publication-authors">
                 <span class="author-block">ICLR 2024 Spotlight</span>
               </div>
-        </div>
+        </div> -->
                     
         <div class="column has-text-centered">
             <div class="is-size-4 publication-authors">
                 <span class="author-block">
-                    <a href="https://sigal-raab.github.io/" target="_blank">Sigal Raab</a>*,
-                    <a href="https://scholar.google.com/citations?user=u6qz2P8AAAAJ&hl=iw&inst=2457744612629960019&oi=sra" target="_blank">Inbal Leibovitch</a>*,
-                    <a href="https://guytevet.github.io/" target="_blank">Guy Tevet</a>,
-                    <a href="https://scholar.google.com/citations?user=uiFoSGMAAAAJ&hl=en&inst=2457744612629960019" target="_blank">Moab Arar</a>,
-                    <br/>
-                    <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit H. Bermano</a>,
-                    <a href="https://danielcohenor.com/" target="_blank">Daniel Cohen-Or</a></span>
-                    <sup></sup></span>
+                    <a href="https://www.google.com/">Yarin Bekor</a><sup>1,*</sup>,</span>
+                <span class="author-block">
+                    <a href="https://www.google.com/">Gal Harari</a><sup>1,*</sup>,</span>
+                <span class="author-block">
+                    <a href="https://www.google.com/">Or Perel</a><sup>2</sup>,</span>
+                <span class="author-block">
+                    <a href="https://www.google.com/">Or Litany</a><sup>1,2</sup>
+                </span>
             </div>
         </div>
 
         <div class="is-size-5 publication-authors">
-            <span class="author-block">Tel Aviv University, Israel</span>
-            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+            <span class="author-block"><sup>1</sup>&nbsp;Technion</span>
+            &nbsp;&nbsp;&nbsp;
+            <span class="author-block"><sup>2</sup>&nbsp;NVIDIA</span>
+        </div>
+        <div class="is-size-6 publication-authors">
+            <span class="author-block"><sup>*</sup>Indicates Equal Contribution</span>
         </div>
 
                     <div class="column has-text-centered">
                         <div class="publication-links">
                 <span class="link-block">
-                <a href="https://openreview.net/pdf?id=DrhZneqz4n" target="_blank" class="external-link button is-normal is-rounded">
+                <a href="https://arxiv.org/" target="_blank" class="external-link button is-normal is-rounded">
                 <!-- a href="https://arxiv.org/abs/2302.05905" target="_blank" class="external-link button is-normal is-rounded" -->
                 <!-- a href="anonymous_paper.pdf" target="_blank" class="external-link button is-normal is-rounded" -->
                   <span class="icon">
@@ -110,7 +114,7 @@
               </span>
 
                             <span class="link-block">
-                <a href="https://github.com/SinMDM/SinMDM" target="_blank"
+                <a href="https://github.com" target="_blank"
                    class="external-link button is-normal is-rounded">
                 <span class="icon">
                   <i class="fab fa-github"></i>
@@ -120,12 +124,12 @@
               </span>
 
                             <span class="link-block">
-                <a href="https://www.youtube.com/watch?v=DLPYeNyxZZs" target="_blank"
+                <a href="https://huggingface.co/" target="_blank"
                    class="external-link button is-normal is-rounded">
                 <span class="icon">
-                  <i class="fab fa-youtube"></i>
+                    🤗
                 </span>
-                <span>Video</span>
+                <span>Demo</span>
               </a>
               </span>
                         </div>
@@ -140,21 +144,28 @@
 <section class="hero teaser">
     <div class="container is-max-desktop">
         <div class="hero-body">
-
-            <div class="column is-centered has-text-centered">
-                <img src="static/figures/dragon_morelight2 (1).png" alt="breakdancing dragons" width="80%"/>
+            <div class="columns is-centered">
+                <div class="column is-centered has-text-centered">
+                    <p><b>Source</b></p>
+                    <img src="static/videos/bird/bird_only_33.75_new.gif" width="100%">
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <p><b>Target</b></p>
+                    <img src="static/videos/bird/dambo_only_33.75_new.gif" width="100%">
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <p><b>Ours</b></p>
+                    <img src="static/videos/bird/bird_only_213.75_new.gif" width="100%">
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <p><b>Baseline</b></p>
+                    <img src="static/videos/bird/dambo_only_213.75_new.gif" width="100%">
+                </div>
             </div>
-            <!--      <video id="teaser" autoplay muted loop playsinline height="100%">-->
-            <!--        <source src="./static/figures/teaser_all.png"-->
-            <!--                type="video/mp4">-->
-            <!--      </video>-->
-            <h2 class="subtitle has-text-centered">
-                <!--<span class="sin-mdm">SinMDM</span>-->
-                SinMDM learns the internal motion motifs from a single motion
-                sequence with arbitrary topology and synthesizes motions that are faithful
-                to the core learned motifs of the input sequence. For example, a breakdancing dragon.
-            </h2>
 
+            <h2 class="subtitle has-text-centered">
+                Our method extracts the semantic motion from a multi-view source video and applies it to a static target shape in a way that is semantically meaningful. For example, a flying bird to a cartoon elephant.
+            </h2>
         </div>
     </div>
 </section>
@@ -165,54 +176,10 @@
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
             <div class="column is-four-fifths">
-                <div class="item">
-                    <p style="margin-bottom: 30px">
-                        <!-- public SIGA -->
-                        <!--iframe width="720" height="405" src="https://www.youtube.com/embed/DLPYeNyxZZs"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe-->
-                        <!-- anonymous SIGA-->
-                        <!--iframe width="720" height="405" src="https://www.youtube.com/embed/zuWpVTgb_0U"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe-->
-                        <!-- public ICLR -->
-<!--                        https://youtu.be/7mA14Jp9QNc-->
-                        <iframe width="720" height="405" src="https://www.youtube.com/embed/7mA14Jp9QNc"
-                                title="YouTube video player" frameborder="0"
-                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                                allowfullscreen></iframe>
-                        <!-- anonymous ICLR -->
-<!--                        <iframe width="720" height="405" src="https://www.youtube.com/embed/RJSrted0JKk"-->
-<!--                                title="YouTube video player" frameborder="0"-->
-<!--                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
-<!--                                allowfullscreen></iframe>-->
-
-                    </p>
-                </div>
                 <h2 class="title is-3">Abstract</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Synthesizing realistic animations of humans, animals, and even imaginary
-                        creatures, has long been a goal for artists and computer graphics professionals.
-                        Compared to the imaging domain, which is rich with large available
-                        datasets, the number of data instances for the motion domain is limited,
-                        particularly for the animation of animals and exotic creatures (e.g., dragons),
-                        which have unique skeletons and motion patterns. In this work, we present
-                        a Single Motion Diffusion Model, dubbed SinMDM, a model designed to
-                        learn the internal motifs of a single motion sequence with arbitrary topology
-                        and synthesize motions of arbitrary length that are faithful to them. We
-                        harness the power of diffusion models and present a denoising network
-                        explicitly designed for the task of learning from a single input motion. SinMDM is
-                        designed to be a lightweight architecture, which avoids overfitting by using
-                        a shallow network with local attention layers that narrow the receptive field
-                        and encourage motion diversity. SinMDM can be applied in various
-                        contexts, including spatial and temporal in-betweening, motion expansion,
-                        style transfer, and crowd animation. Our results show that SinMDM outperforms
-                        existing methods both in quality and time-space efficiency. Moreover,
-                        while current approaches require additional training for different applications,
-                        our work facilitates these applications at inference time.
+                        We present Gaussian See, Gaussian Do, a novel approach for semantic 3D motion transfer from multiview video. Our method enables rig-free, cross-category motion transfer between objects with semantically meaningful correspondence. Building on implicit motion transfer techniques, we extract motion embeddings from source videos via condition inversion, apply them to rendered frames of static target shapes, and use the resulting videos to supervise dynamic 3D Gaussian Splatting reconstruction. Our approach introduces an anchor-based view-aware motion embedding mechanism, ensuring cross-view consistency and accelerating convergence, along with a robust 4D reconstruction pipeline that consolidates noisy supervision videos. We establish the first benchmark for semantic 3D motion transfer and demonstrate superior motion fidelity and structural consistency compared to adapted baselines.
                     </p>
                 </div>
 
