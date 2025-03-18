@@ -1,39 +1,607 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project Name</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="utf-8">
+
+    <meta property="og:title" content="SinMDM: Single Motion Diffusion"/>
+    <meta property="og:url" content="https://sin-mdm.github.io/sin-mdm-page/"/>
+    <meta property="og:image:width" content="1200"/>
+    <meta property="og:image:height" content="630"/>
+
+
+    <title>Single Motion Diffusion</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PQ3PYPGJRH"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-PQ3PYPGJRH');
+    </script>
+
+    <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+          rel="stylesheet">
+    <link rel="icon" href="static/figures/img_2.png">
+
+    <link rel="stylesheet" href="static/css/bulma.min.css">
+    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+    <script defer src="static/js/fontawesome.all.min.js"></script>
+    <script src="static/js/bulma-carousel.min.js"></script>
+    <script src="static/js/bulma-slider.min.js"></script>
+    <script src="static/js/index.js"></script>
 </head>
+
 <body>
-    <header class="container-fluid py-5">
-        <div class="container">
-            <h1 class="display-4">Gaussian See, Gaussian Do: 3D Semantic Motion Transfer</h1>
-            <p class="lead">Short description of the project</p>
-        </div>
-    </header>
-    
-    <main class="container my-5">
-        <section class="card">
-            <div class="card-body">
-                <h2 class="card-title mb-4">Features</h2>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Feature 1</li>
-                    <li class="list-group-item">Feature 2</li>
-                </ul>
+
+
+<section class="publication-header">
+    <div class="hero-body">
+        <div class="container is-max-widescreen">
+            <!-- <div class="columns is-centered"> -->
+            <div class="column has-text-centered">
+                <h1 class="title is-1 publication-title">SinMDM: Single Motion Diffusion</h1>
             </div>
-        </section>
-    </main>
-
-    <footer class="container-fluid py-3">
-        <div class="container">
-            <p class="mb-0">&copy; 2024 Your Name</p>
         </div>
-    </footer>
+    </div>
 
-    <!-- Bootstrap JS Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</section>
+
+<section class="publication-author-block">
+
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column has-text-centered">
+<!--
+                    to anonimyze:
+                    1. remove author names (till "..indicates equal...")
+                    2. change link to video.
+                    3. remove bibtex reference.
+-->
+        <div class="column has-text-centered">
+              <div class="is-size-4 publication-authors">
+                <span class="author-block">ICLR 2024 Spotlight</span>
+              </div>
+        </div>
+                    
+        <div class="column has-text-centered">
+            <div class="is-size-4 publication-authors">
+                <span class="author-block">
+                    <a href="https://sigal-raab.github.io/" target="_blank">Sigal Raab</a>*,
+                    <a href="https://scholar.google.com/citations?user=u6qz2P8AAAAJ&hl=iw&inst=2457744612629960019&oi=sra" target="_blank">Inbal Leibovitch</a>*,
+                    <a href="https://guytevet.github.io/" target="_blank">Guy Tevet</a>,
+                    <a href="https://scholar.google.com/citations?user=uiFoSGMAAAAJ&hl=en&inst=2457744612629960019" target="_blank">Moab Arar</a>,
+                    <br/>
+                    <a href="https://www.cs.tau.ac.il/~amberman/" target="_blank">Amit H. Bermano</a>,
+                    <a href="https://danielcohenor.com/" target="_blank">Daniel Cohen-Or</a></span>
+                    <sup></sup></span>
+            </div>
+        </div>
+
+        <div class="is-size-5 publication-authors">
+            <span class="author-block">Tel Aviv University, Israel</span>
+            <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
+        </div>
+
+                    <div class="column has-text-centered">
+                        <div class="publication-links">
+                <span class="link-block">
+                <a href="https://openreview.net/pdf?id=DrhZneqz4n" target="_blank" class="external-link button is-normal is-rounded">
+                <!-- a href="https://arxiv.org/abs/2302.05905" target="_blank" class="external-link button is-normal is-rounded" -->
+                <!-- a href="anonymous_paper.pdf" target="_blank" class="external-link button is-normal is-rounded" -->
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+
+                            <span class="link-block">
+                <a href="https://github.com/SinMDM/SinMDM" target="_blank"
+                   class="external-link button is-normal is-rounded">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+              </span>
+
+                            <span class="link-block">
+                <a href="https://www.youtube.com/watch?v=DLPYeNyxZZs" target="_blank"
+                   class="external-link button is-normal is-rounded">
+                <span class="icon">
+                  <i class="fab fa-youtube"></i>
+                </span>
+                <span>Video</span>
+              </a>
+              </span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero teaser">
+    <div class="container is-max-desktop">
+        <div class="hero-body">
+
+            <div class="column is-centered has-text-centered">
+                <img src="static/figures/dragon_morelight2 (1).png" alt="breakdancing dragons" width="80%"/>
+            </div>
+            <!--      <video id="teaser" autoplay muted loop playsinline height="100%">-->
+            <!--        <source src="./static/figures/teaser_all.png"-->
+            <!--                type="video/mp4">-->
+            <!--      </video>-->
+            <h2 class="subtitle has-text-centered">
+                <!--<span class="sin-mdm">SinMDM</span>-->
+                SinMDM learns the internal motion motifs from a single motion
+                sequence with arbitrary topology and synthesizes motions that are faithful
+                to the core learned motifs of the input sequence. For example, a breakdancing dragon.
+            </h2>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
+                <div class="item">
+                    <p style="margin-bottom: 30px">
+                        <!-- public SIGA -->
+                        <!--iframe width="720" height="405" src="https://www.youtube.com/embed/DLPYeNyxZZs"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe-->
+                        <!-- anonymous SIGA-->
+                        <!--iframe width="720" height="405" src="https://www.youtube.com/embed/zuWpVTgb_0U"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe-->
+                        <!-- public ICLR -->
+<!--                        https://youtu.be/7mA14Jp9QNc-->
+                        <iframe width="720" height="405" src="https://www.youtube.com/embed/7mA14Jp9QNc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                        <!-- anonymous ICLR -->
+<!--                        <iframe width="720" height="405" src="https://www.youtube.com/embed/RJSrted0JKk"-->
+<!--                                title="YouTube video player" frameborder="0"-->
+<!--                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"-->
+<!--                                allowfullscreen></iframe>-->
+
+                    </p>
+                </div>
+                <h2 class="title is-3">Abstract</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Synthesizing realistic animations of humans, animals, and even imaginary
+                        creatures, has long been a goal for artists and computer graphics professionals.
+                        Compared to the imaging domain, which is rich with large available
+                        datasets, the number of data instances for the motion domain is limited,
+                        particularly for the animation of animals and exotic creatures (e.g., dragons),
+                        which have unique skeletons and motion patterns. In this work, we present
+                        a Single Motion Diffusion Model, dubbed SinMDM, a model designed to
+                        learn the internal motifs of a single motion sequence with arbitrary topology
+                        and synthesize motions of arbitrary length that are faithful to them. We
+                        harness the power of diffusion models and present a denoising network
+                        explicitly designed for the task of learning from a single input motion. SinMDM is
+                        designed to be a lightweight architecture, which avoids overfitting by using
+                        a shallow network with local attention layers that narrow the receptive field
+                        and encourage motion diversity. SinMDM can be applied in various
+                        contexts, including spatial and temporal in-betweening, motion expansion,
+                        style transfer, and crowd animation. Our results show that SinMDM outperforms
+                        existing methods both in quality and time-space efficiency. Moreover,
+                        while current approaches require additional training for different applications,
+                        our work facilitates these applications at inference time.
+                    </p>
+                </div>
+
+                <div class="column is-centered has-text-centered">
+
+                    <img src="static/figures/5_frames_michelle_transp.png" alt="breakdancing dragons"/>
+
+                </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
+
+
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Generative Network</h2>
+                <div class="content has-text-justified">
+
+                    <p>
+                        Our goal is to construct a model that can generate a variety of
+                        synthesized motions that retain the core motion motifs of a single
+                        learned input sequence.
+                        To allow training on a single motion, our denoising network is designed such that its overall
+                        receptive field covers only a portion of the input
+                        sequence. This effectively allows the network to simultaneously learn from multiple local
+                        temporal motion segments, as shown below.
+                    </p>
+                    <div class="column is-centered has-text-centered">
+                        <img src="static/figures/narrow-v2-1.png" alt="cars peace" width="80%"/>
+                    </div>
+                    <p>
+                        Our network is a shallow UNet, enhanced with a QnA local attention layer.
+                    </p>
+                    <div class="column is-centered has-text-centered">
+                        <img src="static/figures/unet_qna6.png" alt="cars peace" width="100%"/>
+                    </div>
+
+                    <p>
+                        Our model enables modeling motions of arbitrary skeletal topology, and can handle complex
+                        and non-trivial skeletons which often have no more than one animation sequence to learn from.
+                    </p>
+                    <div class="column is-centered has-text-centered">
+                        <video poster="" id="tree" playsinline autoplay muted loop width="90%">
+                            <source src="static/videos/dragon/skeleton-highres.mp4"
+                                    type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Crowd Animation</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Although trained on a single sequence, during inference SinMDM can generate a crowd performing a
+                        variety of similar motions. For example, our model can generate a
+                        diverse crowd based on a hopping ostrich, a jaguar or a breakdancing dragon.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered is-four-fifths">
+
+                <div class="column is-centered has-text-centered">
+                    <p><b>Jaguars</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/crowd/jaguar_0000-0300.mp4"
+                                type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <p><b>Ostriches</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/crowd/ostrich_0000-0300.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="column is-centered has-text-centered">
+                <p><b>Dragons</b></p>
+                <video poster="" id="tree" playsinline autoplay muted loop width="70%">
+                    <source src="static/videos/dragon/many_dragons_highres.mp4"
+                            type="video/mp4">
+                </video>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Temporal Composition</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        A given motion sequence is temporally composed with a synthesized one.
+                        Meaning a part of the motion is given, for example the beginning and the end, and the rest is
+                        completed by the network. In the examples below, given parts are shaded in gray, and generated
+                        parts are full color. Note how the network generates diverse results
+                        for the same inputs, and the completed motion naturally matches the given parts even
+                        when they are very different.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+                <div class="column is-centered has-text-centered">
+                    <p><b>Warmup to Warmup</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/temporal_composition/temporal_composition_warmup.mp4"
+                                type="video/mp4">
+                    </video>
+
+                </div>
+
+                <div class="column is-centered has-text-centered">
+                    <p><b>Walk to Breakdance to Walk</b></p>
+                    <p><b><small>(Model trained on Breakdance)</small></b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/temporal_composition/temporal_composition.mp4"
+                                type="video/mp4">
+                    </video>
+
+                </div>
+            </div>
+
+            <div class="columns is-centered">
+
+                <div class="column is-centered has-text-centered">
+                    <p><b>Same Motion Prefix</b>
+                    </p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/temporal_composition/horse_new.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+
+                <div class="column is-centered has-text-centered">
+                    <p><b>Motion Expansion</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/temporal_composition/temporal_composition_outpainting.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Spatial Composition</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Motion composition can also be done spatially by using selected joints as input,
+                        and generating the rest. Below we show control over the upper body. The motion of the
+                        upper body is determined by a reference motion unseen by the network (Warm-up), and the model
+                        synthesizes the rest of the joints according to the learned motion motifs (Walk in cirlce).
+                        In the composed result the top body part performs a warm-up activity, and the bottom body part
+                        walks in a curvy
+                        line.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+
+                <div class="column is-centered has-text-centered">
+                    <p><b>Upper Body Reference</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="80%">
+                        <source src="static/videos/spatial_composition/reference_upper_body_0000-0189.mp4"
+                                type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <p><b>Training Sequence</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="80%">
+                        <source src="static/videos/spatial_composition/walk_in_circle_0000-0377.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+            <div class="column is-centered has-text-centered">
+                <p><b>Composed Result</b>
+                </p>
+                <video poster="" id="tree" playsinline autoplay muted loop width="60%">
+                    <source src="static/videos/spatial_composition/generated_0000-0189.mp4"
+                            type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Style Transfer</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        In the case of style transfer the model is trained on the style motion, and the content
+                        motion, unseen by the network, is adjusted to match the style motion's motifs.
+                        Below are examples for transferring "happy" and "crouched" styles to the same walking content
+                        motion.
+                        Note how both generated results and content motion match in stride pace and rhythm.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+
+                <div class="column is-centered has-text-centered">
+                    <p><b>"Crouched"<span class="tab"></span>Content<span class="tab"></span>Result</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/style_transfer/crouched_0000-0093.mp4"
+                                type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <p><b>"Happy"<span class="tab"></span>Content<span class="tab"></span>Result</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
+                        <source src="static/videos/style_transfer/happy_0000-0093.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small is-light">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="column is-centered has-text-centered">
+                <h2 class="title is-3">Long Motion</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Our network can synthesize variable length motions, and generate very long animations with no
+                        additional training.
+                        See below how the input sequence ends long before the generated sequence, which is 60 seconds
+                        long.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="hero is-small">
+    <div class="hero-body">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered">
+
+                <div class="column is-centered has-text-centered">
+                    <p><b>Original motion</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted controls width="60%">
+                        <source src="static/videos/long_motion/gt0000-0359.mp4"
+                                type="video/mp4">
+                    </video>
+
+                </div>
+                <div class="column is-centered has-text-centered">
+                    <p><b>Generated 60 seconds</b></p>
+                    <video poster="" id="tree" playsinline autoplay muted controls loop width="100%">
+                        <source src="static/videos/long_motion/generated0000-1800.mp4"
+                                type="video/mp4">
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- BibTeX -->
+
+<section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>
+            @inproceedings{raab2024single,
+            title={Single Motion Diffusion},
+            author={Raab, Sigal and Leibovitch, Inbal and Tevet, Guy and Arar, Moab and Bermano, Amit H and Cohen-Or, Daniel},
+            booktitle={The Twelfth International Conference on Learning Representations (ICLR)},             <!--journal={ preprint ararXivXiv:2302.05905}, -->
+            url={https://openreview.net/pdf?id=DrhZneqz4n},
+            year={2024}
+            }
+        </code></pre>
+    </div>
+</section>
+
+
+<footer class="footer">
+    <!--  <div class="container">
+       <div class="content has-text-centered">
+         <a class="icon-link"
+         href="https://homes.cs.washington.edu/~kpar/nerfies/videos/nerfies_paper.pdf">
+         <i class="fas fa-file-pdf"></i>
+       </a>
+       <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+         <i class="fab fa-github"></i>
+       </a>
+     </div> -->
+    <div class="columns is-centered">
+        <div class="column is-8">
+            <div class="content">
+                <p>
+                    This website is licensed under a <a rel="license"
+                                                        href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                    Commons Attribution-ShareAlike 4.0 International License</a>.
+                </p>
+                <p>
+                    Website source code based on the <a href="https://nerfies.github.io/"> Nerfies</a> project page. If
+                    you want to reuse their <a
+                        href="https://github.com/nerfies/nerfies.github.io">source code</a>, please credit them
+                    appropriately.
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript">
+    var sc_project = 12351448;
+    var sc_invisible = 1;
+    var sc_security = "c676de4f";
+</script>
+<script type="text/javascript"
+        src="https://www.statcounter.com/counter/counter.js"
+        async></script>
+<noscript>
+    <div class="statcounter"><a title="Web Analytics"
+                                href="https://statcounter.com/" target="_blank"><img
+            class="statcounter"
+            src="https://c.statcounter.com/12351448/0/c676de4f/1/"
+            alt="Web Analytics"></a></div>
+</noscript>
+<!-- End of Statcounter Code -->
+
 </body>
 </html>
