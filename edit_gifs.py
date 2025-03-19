@@ -68,4 +68,11 @@ if __name__ == "__main__":
     right = 230    # how many pixels to crop from right
     fps = 10      # desired frames per second
 
+    gif_path = "static/videos/car/horse_only_90.00.gif"
+    top = 0      # how many pixels to crop from top
+    bottom = 120   # how many pixels to crop from bottom
+    left = 300     # how many pixels to crop from left
+    right = 230    # how many pixels to crop from right
+    fps = 10      # desired frames per second
+
     edit_gif(gif_path, top, bottom, left, right, fps)
