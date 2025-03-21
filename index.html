@@ -141,25 +141,49 @@
     </div>
 </section>
 
-<section class="hero teaser">
+<section class="hero teaser"></section>
     <div class="container is-max-desktop">
         <div class="hero-body">
             <div class="columns is-centered">
-                <div class="column is-centered has-text-centered">
-                    <p><b>Source view 1</b></p>
-                    <img src="static/videos/bird/bird_only_33.75_new.gif" width="100%">
+                <!-- Source column -->
+                <div class="column is-one-third">
+                    <div class="has-text-centered mb-4">
+                        <p><b>Source</b></p>
+                        <div class="mb-4 is-flex is-align-items-center">
+                            <p class="mr-2"><b>View 1</b></p>
+                            <img src="static/videos/bird/bird_only_213.75_new.gif" width="90%">
+                        </div>
+                        <div class="is-flex is-align-items-center">
+                            <p class="mr-2"><b>View 2</b></p>
+                            <img src="static/videos/bird/bird_only_33.75_new.gif" width="90%">
+                        </div>
+                    </div>
                 </div>
-                <div class="column is-centered has-text-centered">
-                    <p><b>Target view 1</b></p>
-                    <img src="static/videos/bird/dambo_only_33.75_new.gif" width="100%">
+
+                <!-- Plus sign -->
+                <div class="column is-narrow is-flex is-align-items-center has-text-centered">
+                    <p class="is-size-2"><b>+</b></p>
                 </div>
-                <div class="column is-centered has-text-centered">
-                    <p><b>Source view 2</b></p>
-                    <img src="static/videos/bird/bird_only_213.75_new.gif" width="100%">
+
+                <!-- Static Target column -->
+                <div class="column is-one-third has-text-centered">
+                    <p><b>Static 3DGS</b></p>
+                    <!-- Add your static target image here -->
                 </div>
-                <div class="column is-centered has-text-centered">
-                    <p><b>Target view 2</b></p>
-                    <img src="static/videos/bird/dambo_only_213.75_new.gif" width="100%">
+
+                <!-- Equal sign -->
+                <div class="column is-narrow is-flex is-align-items-center has-text-centered">
+                    <p class="is-size-2"><b>=</b></p>
+                </div>
+
+                <!-- Animated Target column -->
+                <div class="column is-one-third">
+                    <div class="has-text-centered mb-4">
+                        <p><b>Dynamic 3DGS</b></p>
+                        <div class="is-flex justify-content-center is-align-items-center" style="height: 100%;">
+                            <img src="static/videos/bird/dynamic_carousel_new.gif" width="90%" style="margin-top: 80px;">
+                        </div>
+                    </div>
                 </div>
             </div>
 
@@ -171,7 +195,7 @@
 </section>
 
 
-<section class="section hero">
+<section class="section hero is-light">
     <div class="container is-max-desktop">
         <!-- Abstract. -->
         <div class="columns is-centered has-text-centered">
@@ -182,15 +206,25 @@
                         We present Gaussian See, Gaussian Do, a novel approach for semantic 3D motion transfer from multiview video. Our method enables rig-free, cross-category motion transfer between objects with semantically meaningful correspondence. Building on implicit motion transfer techniques, we extract motion embeddings from source videos via condition inversion, apply them to rendered frames of static target shapes, and use the resulting videos to supervise dynamic 3D Gaussian Splatting reconstruction. Our approach introduces an anchor-based view-aware motion embedding mechanism, ensuring cross-view consistency and accelerating convergence, along with a robust 4D reconstruction pipeline that consolidates noisy supervision videos. We establish the first benchmark for semantic 3D motion transfer and demonstrate superior motion fidelity and structural consistency compared to adapted baselines.
                     </p>
                 </div>
+            </div>
+        </div>
+        <!--/ Abstract. -->
+    </div>
+</section>
 
+<section class="section hero">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+            <div class="column is-four-fifths">
                 <div class="columns is-centered">
                     <div class="column is-centered has-text-centered">
-                        <p><b>Source view 1</b></p>
-                        <img src="static/videos/car/car_only_90.0.gif" alt="Source view 1" style="width: 100%; max-width: 100%;">
+                        <p><b>Source</b></p>
+                        <img src="static/videos/car/horse_only_90.00_new.gif" alt="Source" style="width: 100%; max-width: 100%;">
                     </div>
                     <div class="column is-centered has-text-centered">
-                        <p><b>Target view 1</b></p>
-                        <img src="static/videos/car/horse_only_90.00_new.gif" alt="Target view 1" style="width: 100%; max-width: 100%;">
+                        <p><b>Target</b></p>
+                        <img src="static/videos/car/car_only_90.0.gif" alt="Target" style="width: 100%; max-width: 100%;">
                     </div>
                 </div>
             </div>
@@ -199,6 +233,22 @@
     </div>
 </section>
 
+<section class="section hero is-light">
+    <div class="container is-max-desktop">
+        <!-- Abstract. -->
+        <div class="columns is-centered has-text-centered">
+
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">Our Method</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Pipeline Overview. (1) Structured Multiview Motion Inversion. We extract motion embeddings from the source using the slerp interpolation from the two nearest achor points. (2) View-aware Semantic Motion Transfer. We use the motion embeddings to generate supervision for the motion transfer process, and then (3) 4D Consolidation. We apply the  supervision onto the target shape to introduce actual motion
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="section hero">
     <div class="container is-max-desktop">
@@ -206,93 +256,12 @@
         <div class="columns is-centered has-text-centered">
 
             <div class="column is-four-fifths">
-                <h2 class="title is-3">Motion Extraction</h2>
                 <div class="content has-text-justified">
-
-                    <p>
-                        text text text text text text text
-                    </p>
-                    <div class="columns is-centered">
-                        <div class="column is-centered has-text-centered">
-                            <p><b>Title 1</b></p>
-                            <img src="static/videos/narrow-v2-1.gif" alt="cars peace" width="100%">
-                        </div>
-                        <div class="column is-centered has-text-centered">
-                            <p><b>Title 2</b></p>
-                            <img src="static/videos/narrow-v2-2.gif" alt="cars peace" width="100%">
-                        </div>
-                    </div>
-                    <p>
-                        Our network is a shallow UNet, enhanced with a QnA local attention layer.
-                    </p>
                     <div class="column is-centered has-text-centered">
-                        <img src="static/figures/unet_qna6.png" alt="cars peace" width="100%"/>
-                    </div>
-
-                    <p>
-                        Our model enables modeling motions of arbitrary skeletal topology, and can handle complex
-                        and non-trivial skeletons which often have no more than one animation sequence to learn from.
-                    </p>
-                    <div class="column is-centered has-text-centered">
-                        <video poster="" id="tree" playsinline autoplay muted loop width="90%">
-                            <source src="static/videos/dragon/skeleton-highres.mp4"
-                                    type="video/mp4">
-                        </video>
+                        <img src="static/figures/Method-1.png" alt="cars peace" width="100%"/>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</section>
-
-
-<section class="hero is-small">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="column is-centered has-text-centered">
-                <h2 class="title is-3">Crowd Animation</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        Although trained on a single sequence, during inference SinMDM can generate a crowd performing a
-                        variety of similar motions. For example, our model can generate a
-                        diverse crowd based on a hopping ostrich, a jaguar or a breakdancing dragon.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero is-small">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered is-four-fifths">
-
-                <div class="column is-centered has-text-centered">
-                    <p><b>Jaguars</b></p>
-                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
-                        <source src="static/videos/crowd/jaguar_0000-0300.mp4"
-                                type="video/mp4">
-                    </video>
-
-                </div>
-                <div class="column is-centered has-text-centered">
-                    <p><b>Ostriches</b></p>
-                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
-                        <source src="static/videos/crowd/ostrich_0000-0300.mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-            <div class="column is-centered has-text-centered">
-                <p><b>Dragons</b></p>
-                <video poster="" id="tree" playsinline autoplay muted loop width="70%">
-                    <source src="static/videos/dragon/many_dragons_highres.mp4"
-                            type="video/mp4">
-                </video>
-            </div>
-
         </div>
     </div>
 </section>
@@ -416,94 +385,6 @@
                     <source src="static/videos/spatial_composition/generated_0000-0189.mp4"
                             type="video/mp4">
                 </video>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero is-small is-light">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="column is-centered has-text-centered">
-                <h2 class="title is-3">Style Transfer</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        In the case of style transfer the model is trained on the style motion, and the content
-                        motion, unseen by the network, is adjusted to match the style motion's motifs.
-                        Below are examples for transferring "happy" and "crouched" styles to the same walking content
-                        motion.
-                        Note how both generated results and content motion match in stride pace and rhythm.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero is-small">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered">
-
-                <div class="column is-centered has-text-centered">
-                    <p><b>"Crouched"<span class="tab"></span>Content<span class="tab"></span>Result</b></p>
-                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
-                        <source src="static/videos/style_transfer/crouched_0000-0093.mp4"
-                                type="video/mp4">
-                    </video>
-
-                </div>
-                <div class="column is-centered has-text-centered">
-                    <p><b>"Happy"<span class="tab"></span>Content<span class="tab"></span>Result</b></p>
-                    <video poster="" id="tree" playsinline autoplay muted loop width="100%">
-                        <source src="static/videos/style_transfer/happy_0000-0093.mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</section>
-
-<section class="hero is-small is-light">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="column is-centered has-text-centered">
-                <h2 class="title is-3">Long Motion</h2>
-                <div class="content has-text-justified">
-                    <p>
-                        Our network can synthesize variable length motions, and generate very long animations with no
-                        additional training.
-                        See below how the input sequence ends long before the generated sequence, which is 60 seconds
-                        long.
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="hero is-small">
-    <div class="hero-body">
-        <div class="container is-max-desktop">
-            <div class="columns is-centered">
-
-                <div class="column is-centered has-text-centered">
-                    <p><b>Original motion</b></p>
-                    <video poster="" id="tree" playsinline autoplay muted controls width="60%">
-                        <source src="static/videos/long_motion/gt0000-0359.mp4"
-                                type="video/mp4">
-                    </video>
-
-                </div>
-                <div class="column is-centered has-text-centered">
-                    <p><b>Generated 60 seconds</b></p>
-                    <video poster="" id="tree" playsinline autoplay muted controls loop width="100%">
-                        <source src="static/videos/long_motion/generated0000-1800.mp4"
-                                type="video/mp4">
-                    </video>
-                </div>
             </div>
         </div>
     </div>

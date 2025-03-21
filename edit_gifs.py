@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-def edit_gif(gif_path, top, bottom, left, right, fps):
+def edit_gif(gif_path, top, bottom, left, right, fps, cut_frames=0):
     # Get the original file path and create new path with _new
     file_name, file_ext = os.path.splitext(gif_path)
     new_path = f"{file_name}_new{file_ext}"
@@ -25,6 +25,10 @@ def edit_gif(gif_path, top, bottom, left, right, fps):
             original.seek(original.tell() + 1)
     except EOFError:
         pass  # We've reached the end of the frames
+
+    # Remove the specified number of frames from the end
+    if cut_frames > 0:
+        frames = frames[:-cut_frames]
 
     # Print number of frames
     print(f"Total frames in GIF: {len(frames)}")
@@ -71,8 +75,17 @@ if __name__ == "__main__":
     gif_path = "static/videos/car/horse_only_90.00.gif"
     top = 0      # how many pixels to crop from top
     bottom = 120   # how many pixels to crop from bottom
-    left = 300     # how many pixels to crop from left
+    left = 230     # how many pixels to crop from left
     right = 230    # how many pixels to crop from right
     fps = 10      # desired frames per second
+    cut_frames = 3
 
-    edit_gif(gif_path, top, bottom, left, right, fps)
+    gif_path = "static/videos/bird/dynamic_carousel.gif"
+    top = 180      # how many pixels to crop from top
+    bottom = 175   # how many pixels to crop from bottom
+    left = 120     # how many pixels to crop from left
+    right = 130    # how many pixels to crop from right
+    fps = 10      # desired frames per second
+    cut_frames = 0
+    
+    edit_gif(gif_path, top, bottom, left, right, fps, cut_frames)
